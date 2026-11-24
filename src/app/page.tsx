@@ -164,9 +164,8 @@ export default function CafeOfficesPage() {
         </div>
       </div>
 
-      {/* Header minimalista centrado con subrayado animado */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-100 transition-colors">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between text-xs tracking-wide lowercase">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between text-xs tracking-wide lowercase">
           <nav className="hidden md:flex items-center gap-7 text-neutral-600">
             <a
               href="#espacios"
@@ -190,41 +189,44 @@ export default function CafeOfficesPage() {
 
           <a
             href="#"
-            className="text-lg md:text-xl font-semibold tracking-tight text-black mx-auto md:mx-0 hover:opacity-75 transition-opacity"
+            className="text-base md:text-xl font-semibold tracking-tight text-black hover:opacity-75 transition-opacity"
           >
             cafe.te <span className="font-light text-neutral-400">| oficinas</span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-7 text-neutral-600">
-            <a
-              href="#oficina-01"
-              className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
-            >
-              oficina 01
-            </a>
-            <a
-              href="#oficina-02"
-              className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
-            >
-              oficina 02
-            </a>
-            <a
-              href="#entrepiso"
-              className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
-            >
-              entrepiso
-            </a>
+          <div className="flex items-center gap-7">
+            <nav className="hidden md:flex items-center gap-7 text-neutral-600">
+              <a
+                href="#oficina-01"
+                className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+              >
+                oficina 01
+              </a>
+              <a
+                href="#oficina-02"
+                className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+              >
+                oficina 02
+              </a>
+              <a
+                href="#entrepiso"
+                className="relative py-1 hover:text-black transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all after:duration-300"
+              >
+                entrepiso
+              </a>
+            </nav>
+
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
                 'Hola! Quiero consultar por el alquiler de oficinas en cafe.te'
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-neutral-800 rounded-full px-4 py-1.5 text-black hover:bg-[#6A7053] hover:border-[#6A7053] hover:text-white transition-all duration-300"
+              className="border border-neutral-800 rounded-full px-3.5 py-1.5 text-[11px] md:text-xs text-black hover:bg-[#6A7053] hover:border-[#6A7053] hover:text-white transition-all duration-300"
             >
               consultar
             </a>
-          </nav>
+          </div>
         </div>
       </header>
 
@@ -235,7 +237,7 @@ export default function CafeOfficesPage() {
             heroLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <h1 className="text-2xl md:text-3xl font-light tracking-[0.35em] uppercase text-[#1A1A1A]">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-light tracking-[0.22em] sm:tracking-[0.35em] uppercase text-[#1A1A1A]">
             O F I C I N A S . T E
           </h1>
           <p className="mt-3 text-xs md:text-sm text-neutral-500 lowercase tracking-wide">
